@@ -4,7 +4,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def catch_all_get(request: Request, full_path: str):
+async def catch_all_get(request: Request, full_path: str = None):
     return {
         "message": "GET request caught by通配符路由",
         "requested_path": full_path,
