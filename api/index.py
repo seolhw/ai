@@ -3,7 +3,7 @@ from fastapi import FastAPI, Request
 app = FastAPI()
 
 
-@app.get("/{full_path:path}")
+@app.get("/")
 async def catch_all_get(request: Request, full_path: str):
     return {
         "message": "GET request caught by通配符路由",
