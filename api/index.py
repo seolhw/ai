@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 app = FastAPI({
-    prefix: '/api'
+    root_path: '/api'
 })
 
 
