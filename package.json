@@ -20,7 +20,6 @@
     "preinstall": "npx only-allow pnpm",
     "test": "pnpm exec ts-node ./cypress/support/e2e.ts",
     "test:ui": "cd frontend && pnpm test",
-    "prepare": "husky",
     "lint": "pnpm run lintUi && pnpm run lintPython",
     "lintUi": "pnpm run --parallel lint",
     "formatUi": "pnpm run --parallel format",

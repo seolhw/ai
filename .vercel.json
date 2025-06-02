@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/build.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.10"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/chainlit/server.py"
+    }
+  ],
+  "env": {
+    "PYTHONPATH": "./backend",
+    "CHAINLIT_AUTH_SECRET": "${CHAINLIT_AUTH_SECRET}",
+    "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+    "OPENAI_BASE_URL": "${OPENAI_BASE_URL}"
+  }
+}
