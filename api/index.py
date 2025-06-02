@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request
 
-app = FastAPI(root_path='/api')
+app = FastAPI()
 
 
 @app.get("/{full_path:path}")
