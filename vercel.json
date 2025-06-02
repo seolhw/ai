@@ -4,7 +4,7 @@
   "buildCommand": "backend/build.py",
   "functions": {
     "backend/main.py": {
-      "runtime": "python3.12"
+      "runtime": "@vercel/python@4.7.2"
     }
   }
 }
