@@ -1,4 +1,6 @@
 from fastapi import FastAPI, Request
+from chainlit.utils import mount_chainlit
+
 
 app = FastAPI()
 
