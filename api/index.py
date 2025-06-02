@@ -9,5 +9,5 @@ def read_root():
     return {"Hello": "World1"}
 
 @app.get('hello2')
-def read_root():
+def read_root2():
     return {"Hello": "World2"}
