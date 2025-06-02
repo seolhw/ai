@@ -3,6 +3,8 @@
   "version": 2,
   "buildCommand": "backend/build.py",
   "functions": {
-    "/backend/main.py": {}
+    "/backend/main.py": {
+      "runtime": "python3.12"
+    }
   }
 }
